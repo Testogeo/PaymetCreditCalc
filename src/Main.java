@@ -3,13 +3,13 @@ public class Main {
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
 
-        int Platez_za_god = service.calculate(1_000_000, 1, 9.99);
-        System.out.println("Платёж в месяц " + Platez_za_god + " рублей");
+        int payment1year = service.calculate(1_000_000, 1, 9.99);
+        System.out.println("Платёж в месяц " + payment1year + " рублей");
 
-        int Platez_za_2goda = service.calculate(1_000_000, 2, 9.99);
-        System.out.println("Платёж в месяц " + Platez_za_2goda + " рублей");
+        int payment2years = service.calculate(1_000_000, 2, 9.99);
+        System.out.println("Платёж в месяц " + payment2years + " рублей");
 
-        int Platez_za_3goda = service.calculate(1_000_000, 3, 9.99);
-        System.out.println("Платёж в месяц " + Platez_za_3goda + " рублей");
+        int payment3years = service.calculate(1_000_000, 3, 9.99);
+        System.out.println("Платёж в месяц " + payment3years + " рублей");
     }
 }
